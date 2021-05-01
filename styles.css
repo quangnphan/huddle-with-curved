@@ -1,0 +1,384 @@
+:root{
+    --Pink: hsl(322, 100%, 66%);
+--LightPink: hsl(321, 100%, 78%);
+--LightRed: hsl(0, 100%, 63%);
+--VeryDarkCyan: hsl(192, 100%, 9%);
+--VeryPaleBlue: hsl(207, 100%, 98%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro{
+    padding: 60px;
+    text-align: center;
+    background: url('images/bg-section-top-desktop-1.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.intro .navbar{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+.intro .navbar .nav-btn{
+    border: 1px solid var(--Pink);
+    outline: none;
+    background: none;
+    padding: 10px 30px;
+    border-radius: 35px;
+    font-weight: 400;
+    color: var(--Pink);
+    font-size: 1rem;
+}
+.intro .heading{
+    width: 80%;
+    margin: 120px auto;
+}
+.heading-text h1{
+    font-size: 3rem;
+    color: var(--VeryDarkCyan);
+}
+.heading-text p{
+    width: 55%;
+    margin: 30px auto;
+    font-size: 1.1rem;
+    color: var(--VeryDarkCyan);
+    opacity: 0.9;
+}
+.started-btn{
+    padding: 20px 60px;
+    border: none;
+    outline: none;
+    background-color: var(--Pink);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.3rem;
+    border-radius: 35px;
+    margin-bottom: 80px;
+    box-shadow: 0 5px 10px rgba(0,0, 0, 0.1);
+}
+.heading-num{
+    display: flex;
+    margin: 50px auto;
+    justify-content: space-between;
+    width: 80%;
+    text-align: left;
+}
+.heading-num .num h1{
+    font-size: 5rem;
+    margin: 0;
+}
+.heading-num .num p{
+    font-size: 1.1rem;
+    opacity: 0.5;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.grow-together{
+    background-color: var(--VeryPaleBlue);
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.grow-together .grow-text{
+    width: 35%;
+    align-self: center;
+    margin-right: 60px;
+}
+.content h1{
+    font-size: 2rem;
+}
+.content img{
+    max-width: 600px;
+    height: auto;
+}
+.flowing-conversations{
+    background: url('images/bg-section-bottom-desktop-1.svg'), url('images/bg-section-top-desktop-2.svg');
+    background-position: top, bottom;
+    background-repeat: no-repeat, no-repeat;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+.flowing-conversations .flow-text{
+    width: 35%;
+    align-self: center;
+    margin-left: 60px;
+}
+.flowing-conversations .flow-text,
+.flowing-conversations .flow-img{
+    margin: 200px auto;
+}
+.your-users{
+    background-color: var(--VeryPaleBlue);
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.your-users .user-text{
+    width: 35%;
+    align-self: center;
+    margin-right: 60px;
+}
+.build-community{
+    width: 100%;
+    background:url('images/bg-section-bottom-desktop-2.svg'), url('images/bg-footer-top-desktop.svg');
+    background-position: top, bottom;
+    background-repeat: no-repeat, no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.build-community h1{
+    margin-top: 200px;
+}
+.build-community .started-btn{
+    margin-bottom: 350px;
+}
+.footer{
+    background-color: var(--VeryDarkCyan);
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+}
+.footer .contact{
+    max-width: 400px;
+}
+.footer .newsletter{
+    max-width: 600px;
+}
+.footer .contact p{
+    margin: 30px auto;
+}
+.footer .contact .phone,
+.footer .contact .email{
+    display: flex;
+    margin: 10px;
+}
+.footer .contact .phone img,
+.footer .contact .email img{
+    margin-right: 15px;
+}
+.footer .contact .icons{
+    margin-top: 50px;
+}
+.icons i{
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+.icons i:hover{
+    color: var(--Pink);
+}
+
+.footer .newsletter h1{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.newsletter p{
+    margin: 30px 0;
+    width: 60%;
+}
+.footer .newsletter .form{
+    width: 100%;
+    display: flex;
+}
+.form input{
+    height: 50px;
+    width: 50%;
+    margin-right: 30px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+}
+.form button{
+    padding: 10px 40px;
+    border:none;
+    outline: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: var(--Pink);
+}
+button:hover{
+    opacity: 0.5;
+}
+
+@media(max-width: 600px){
+    .intro{
+        padding: 0;
+        width: 100vw;
+        background: url('images/bg-section-top-mobile-1.svg');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .navbar{
+        width: 80%;
+        margin: 50px auto;
+    }
+    .navbar img{
+        width: 100px;
+        height: 30px;
+    }
+    .intro .navbar .nav-btn{
+        font-size: 0.8rem;
+        padding: 5px 15px;
+    }
+    .started-btn{
+        font-size: 1rem;
+        padding: 15px 20px;
+        width: 80%;
+    }
+    .intro .heading{
+        width: 80%;
+        margin: auto;
+    }
+    .intro .heading-text h1{
+        font-size: 2rem;
+        margin-top: 80px;
+    }
+    .intro .heading p{
+        width: 80%;
+    }
+    .intro .heading .heading-img img{
+        width: 80%;
+    }
+    .intro .heading-num{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto 200px auto;
+    }
+    .intro .heading-num h1{
+        font-size: 4rem;
+    }
+    .heading-num .num1{
+        margin: 50px auto;
+    }
+    .content{
+        text-align: center;
+    }
+    .content img{
+        width: 80%;
+        height: auto;
+    }
+    .content .grow-together{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .grow-together .grow-text{
+        width: 80%;
+        margin: 50px auto;
+    }
+    .grow-together h1{
+        width: 80%;
+        margin: 50px auto 20px auto;
+    }
+    .flowing-conversations{
+        flex-direction: column-reverse;
+        background: url('images/bg-section-bottom-mobile-1.svg'), url('images/bg-section-top-mobile-2.svg');
+        background-position: top, bottom;
+        background-size: contain, contain;
+        background-repeat: no-repeat, no-repeat;
+    }
+    .flowing-conversations .flow-text{
+        width: 80%;
+        margin: 50px auto 100px auto;
+    }
+    .flow-text h1{
+        margin: 30px auto;
+    }
+    .flow-text p{
+        margin:20px auto 70px auto;
+        width: 80%;
+    }
+    .flowing-conversations .flow-img{
+        margin: 150px auto 50px auto;
+    }
+    .your-users{
+        flex-direction: column-reverse;
+    }
+    .your-users .user-text{
+        width: 80%;
+        margin: 50px auto;
+    }
+    .build-community{
+        width: 100%;
+        background: url('images/bg-section-bottom-mobile-2.svg'), url('images/bg-footer-top-mobile.svg');
+        background-size: contain, contain;
+        background-position: top, bottom;
+        background-repeat: no-repeat, no-repeat;
+    }
+    .build-community h1{
+        margin-bottom: 20px;
+    }
+    .build-community .started-btn{
+        width: 60%;
+        margin-bottom: 200px;
+    }
+    .footer{
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+    .footer .newsletter p{
+        width: 100%;
+    }
+    .footer .newsletter{
+        margin: 30px auto 80px auto;
+        max-width: 80%;
+    }
+    .footer .contact{
+        max-width: 80%;
+        margin: 30px auto;
+    }
+    .footer .newsletter .form{
+        flex-direction: column;
+    }
+    .footer .newsletter input{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer .newsletter .form button{
+        width: 50%;
+        align-self: flex-end;
+        padding: 15px 50px;
+    }
+}
